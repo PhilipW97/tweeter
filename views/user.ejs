@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+
+    <body>
+        <div class="full_width header max-width">
+            <a href="/home"><img class="left smallMargin" src="/twitterBird.jpg"></a> 
+            <form action="/logout" method="POST">
+                <button class="right logout smallMargin">Logout</button>
+            </form>
+        </div>
+       <div class="max-width center">
+           <p id="username"><%= username %></p>
+
+           <div id="Usersnumbers">
+               <div class="left">
+                    <p>Tweets: <%= tweets %> </p>
+                    <p>Follower: <%= followers %> </p>
+                    <p>Following: <%= following %> </p>
+               </div>
+                
+                <form style="display: <%= display %>"  action="<%= uid %>" method="POST">
+                    <button id="follow"><%= follows %></button>
+                </form>
+           </div>
+
+           
+
+
+
+           <div>
+                <% for(var i = array.length - 1; i > -1; i--) {%>
+                    <div class="post">
+                        <p class="postName"> <%= array[i].username %></p>
+                        <a href="/tweets/<%= array[i].id %>"><p class="postContent inline-block"><%= array[i].content %></p></a>    
+                        <p class="postTime"> <%= array[i].time %></p>
+                        <hr>
+                    </div>  
+                <%} %>
+            </div>
+
+            
+        </div>
+    </body>
+
+    <footer>
+    </footer>
+</html>

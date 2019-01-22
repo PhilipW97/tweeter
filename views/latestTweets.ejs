@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+
+    <body>
+        <div class="full_width header max-width">
+            <img class="left smallMargin" src="/twitterBird.jpg">
+            <form action="/register" method="GET"><button class="logout right smallMargin">Registrieren</button></form>
+            <form action="/" method="GET"><button class="logout right smallMargin">Anmelden</button></form>
+        </div>
+
+        <div>
+            <% for(var i = array.length - 1; i > -1; i--) {%>
+                <div class="post">
+                    <p class="postName"> <%= array[i].username %></p>
+                    <p class="postContent"> <%= array[i].content %></p>
+                    <p class="postTime"> <%= array[i].time %></p>
+                    <hr>
+                </div>  
+            <%} %>
+        </div>
+    </body>
+
+    <footer>
+    </footer>
+</html>

@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+
+    <body>
+        <div class="full_width header max-width">
+            <a href="/home"><img class="left smallMargin" src="/twitterBird.jpg"></a> 
+            <form action="/logout" method="POST">
+                <button class="right logout smallMargin">Logout</button>
+            </form>
+
+            <form action="/search" method="POST">
+                <button class="right logout search">Suchen</button>
+                <input name="search" class="searchBar right smallMargin" type="text" placeholder="Search..">
+            </form>         
+        </div>
+       
+        <form class="max-width" id="postForm" action="/tweets" method="POST">
+            <textarea name="content" id="" cols="30" rows="10"></textarea>
+            <div class="full_width">
+                <button id="tweet" class="right smallMargin tweetButton">Tweet</button>
+            </div>
+        </form>
+
+
+        <div>
+            <% for(var i = array.length - 1; i > -1; i--) {%>
+                <div class="post">
+                    <a href="/users/<%= array[i].user_id %>" ><p class="postName"> <%= array[i].username %></p></a>
+                    <a href="/tweets/<%= array[i].id %>"><p class="postContent inline-block"> <%= array[i].content %></p></a>
+                    <p class="postTime"> <%= array[i].time %></p>
+                    <hr>
+                </div>  
+            <%} %>
+        </div>
+    </body>
+
+    <footer>
+    </footer>
+</html>

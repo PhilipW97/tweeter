@@ -1,0 +1,503 @@
+/******************************************************************************************************************
+GENERAL
+*****************************************************************************************************************/
+body {
+    margin:0;
+    padding:0;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align: center;
+}
+
+h1 {
+  width:350px;
+  height:64px;
+  font-size:27px;
+  line-height:32px;
+  text-align: left;
+  margin: 0 auto;
+  display: block;
+  font-family: "Helvetica Neue"
+}
+
+h2 {
+  font-size: 18px;
+  font-family: "Helvetica Neue";
+  width:350px;
+  text-align: left;
+  margin: 48px auto 16px;
+}
+
+hr {
+  border-color: lightgray;
+  box-shadow: none;
+  border: 0.5px solid lightgray;
+}
+
+img {
+  float: left;
+  width:35px;
+  height:35px;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+.none {
+  display:none;
+}
+
+.center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header {
+  display:inline-block;
+  height:60px;
+}
+
+.header form {
+  display:inline;
+}
+
+.submit {
+  border-color: #1da1f2;
+  border-radius: 30px;
+  border-style:solid;
+  border-width: 1,5px;
+  color: #1da1f2;
+  font-size: 14px;
+}
+
+.submit:hover {
+  background-color: #1da1f2;
+  color: white;
+}
+
+.blue_background {
+  background-color: blue;
+}
+
+.inline-Block {
+  display:inline-block;
+}
+
+.eighty {
+  width:80%;
+}
+
+
+
+.max-width {
+  max-width:1200px;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+.smallMargin {
+  margin: 15px;
+}
+
+.logout {
+  color:black;
+  text-align:right;
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 15px;
+  height: 30px;
+  border-radius:10px;
+  border-style:solid;
+  border-width: 1,5px;
+  border-color: #1da1f2;
+  color: #1da1f2;
+}
+
+.logout:hover {
+  background-color: #1da1f2;
+  color: white;
+}
+
+.full_width {
+  width: 100%;
+}
+
+.max_width {
+  width:100%;
+  width: 1000px;
+}
+
+.block {
+  display: block;
+}
+
+/*POST*/
+.post {
+  width:70%;
+  color: black;
+  border-radius: 5px;
+  margin:0 auto;
+  text-align: left;
+}
+
+.postContent {
+  color: black;
+  margin:5px;
+}
+
+.postName {
+  margin:5px;
+  color: black;
+  font-weight: bold;
+}
+
+.postName:hover {
+  color:rgb(29, 202, 255);
+  text-decoration: underline;
+}
+
+.postTime {
+  margin:5px;
+  color: grey;
+}
+
+
+
+
+
+
+
+/******************************************************************************************************************
+HOME
+*****************************************************************************************************************/
+.searchBar {
+  width:300px;
+  height:30px;
+  border-radius: 10px;
+  border-style:solid;
+  border-width: 1px;
+  border-color: grey;
+  align-items: center;
+  padding:5px;
+}
+
+.search {
+  margin-top:15px;
+}
+
+.tweetButton{
+  display: block;
+}
+
+textarea {
+  font-size: 20px;
+  width:100%;
+  height:100px;
+  resize: none;
+  border-radius: 10px;
+  display: block;
+}
+
+#postForm {
+  padding:5px 10%;
+  width:70%;
+  margin:0 auto;
+}
+
+#postForm div {
+  display: inline-block;
+}
+
+#tweet {
+  width: 100px;
+  height:30px;
+  border-radius: 10px;
+}
+
+
+
+/******************************************************************************************************************
+START
+*****************************************************************************************************************/
+.register {
+  border-radius: 100px;
+  background-color: #1da1f2;
+  color :white;
+  font-size:14px;
+  width:350px;
+  height:34px;
+}
+
+.register:hover {
+  background-color: white;
+  border-style:solid;
+  border-width: 1px;
+  border-color: #1da1f2;
+  color:#1da1f2;
+}
+
+#nav_bar {
+  margin-top:15px;
+  margin:16px;
+  text-align:right;
+}
+
+.textField {
+  width:100px;
+  height:40px;
+  margin-right:10px;
+  border-radius: 5px;
+  border-style:solid;
+  border-width: 1px;
+  border-color: #e6ecf0;
+  font-size: 17px;
+  padding: 10px;
+}
+
+.box {
+  margin:0 auto;
+}
+
+.box p {
+  margin: 44px auto;
+  text-align:left;
+  color:white;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  display:block;
+  width:430px;
+}
+
+
+
+
+/*************************************************************************************************************************************
+SINGLE TWEET
+*************************************************************************************************************************************/
+.delete {
+  float: right;
+  border-color: red;
+  color:red;
+  border-radius: 20px;
+  width:70px;
+  height:20px;
+}
+
+
+.delete:hover {
+  color: white;
+  background-color: red;
+}
+
+
+
+
+/*************************************************************************************************************************************
+SEARCH
+*************************************************************************************************************************************/
+#x {
+  border-radius: 20px;
+  border-color: #1da1f2;
+  color:#1da1f2;
+  height: 30px;
+}
+
+#x:hover {
+  color: white;
+  background-color: #1da1f2;
+}
+
+.user {
+  margin: 20px auto;
+  width:70%;
+  text-align: left;
+  color: black;
+}
+
+.user:hover {
+  color: blue;
+}
+
+.user p {
+  margin-right: 50px;
+}
+
+
+
+
+/*************************************************************************************************************************************
+REGISTER
+*************************************************************************************************************************************/
+
+#anmelden {
+  border:none;
+  font-size: 18px;
+}
+
+.centerHelp {
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  height: 80%;
+  margin: 0 auto;
+  padding: 0;
+  vertical-align: middle;
+}
+
+.registerTextField {
+  text-align: center;
+  display: block;
+  width:300px;
+  height:40px;
+  padding:10px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 18px;
+  background-color: white;
+  margin:30px;
+  border-radius: 5px;
+  border-style:solid;
+  border-width: 1px;
+}
+
+.registerForm {
+  margin:0 auto;
+}
+
+
+
+
+
+
+
+/*************************************************************************************************************************************
+USER
+*************************************************************************************************************************************/
+
+#Usersnumbers {
+  width:100%;
+  display:inline-block;
+  margin:10px 0px 10px 0px;
+  padding:10px 0px 10px 0px;
+  border: 0.03px solid;
+  box-shadow: 1px 1px 0.5px grey;
+  border-color: lightgray;
+  border-radius: 15px;
+}
+
+#Usersnumbers div {
+  margin: 5px;
+}
+
+#Usersnumbers p {
+  margin:0px 0px 0px 20px;
+  display: inline;
+}
+
+#Usersnumbers form {
+  display:inline ;
+}
+
+#follow {
+  float:right;
+  border-radius: 100px;
+  background-color: #1da1f2;
+  color :white;
+  font-size:14px;
+  width:100px;
+  height:25px;
+  margin-right:15px;
+}
+
+.follow:hover {
+  background-color: white;
+  border-style:solid;
+  border-width: 1px;
+  border-color: #1da1f2;
+  color:#1da1f2;
+}
+
+#username {
+  font-size: 30px;
+  margin-left:20px;
+  float:left;
+}
+
+
+
+
+/*************************************************************************************************************************************
+SCREEN
+*************************************************************************************************************************************/
+
+@media only screen and (min-width : 860px) {
+  .rightPart {
+    width: 50%;
+    float: right;
+    height:100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+  }
+
+  .centerHelper {
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    float: right;
+    height: 80%;
+    margin: 0 auto;
+    padding: 0;
+    vertical-align: middle;
+  }
+
+  body {
+    max-width: 1500px;
+  }
+
+  #second_div {
+    background-color: #1da1f2;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 50%;
+    float: left;
+    height:100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+  }
+
+
+  .box {
+    vertical-align: middle;
+    margin:0 auto;
+  }
+
+  .registerTextField { 
+    width: 400px;
+    height: 50px;
+    font-size: 22px;
+  }
+}
+
+
+@media only screen and (min-width : 1100px) {
+
+  .textField{
+    width: 130px;
+  }
+
+}

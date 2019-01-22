@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+
+    <body>
+        <div class="max-width center">
+            <img class="left smallMargin" src="twitterBird.jpg">
+            <form action="/" method="GET">
+                <button class="right smallMargin" id="anmelden" >Du hast schon ein Konto? Anmelden</button>
+            </form>
+            
+        </div>
+        
+        <div class="centerHelp">
+            <form class="registerForm" action="/createUser" method="POST">
+                <input class="registerTextField" placeholder="Name" name="name"/>                
+                <input class="registerTextField" placeholder="Username" name="username"/>
+                <input class="registerTextField" placeholder="Passwort" type="password" name="password"/>
+                <button class="registerTextField submit">Registrieren</button>
+            </form>
+        </div>
+    </body>
+
+    <footer>
+    </footer>
+</html>

@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <div class="full_width header max-width">
+            <a href="/home"><img class="left smallMargin" src="/twitterBird.jpg"></a> 
+            <form action="/logout" method="POST">
+                <button class="right logout smallMargin">Logout</button>
+            </form>
+        
+            <form action="/search" method="POST">
+                <button class="right logout search">Suchen</button>
+                <input name="search" class="searchBar right smallMargin" type="text" placeholder="Search..">
+            </form> 
+            <form action="/home" method="GET">
+                <button class="right searcH" ID="x">X</button>
+            </form>    
+        </div>    
+        
+        <%for(var i = array.length - 1; i > -1; i--) {%>
+        <a href="/users/<%= array[i].id %>">
+            <div class="max-width center user">
+                <p class="inline-Block">@<%= array[i].username %></p>
+                <p class="inline-Block"><%= array[i].name %></p>
+                <hr>
+            </div>
+        </a>
+        <%}%>
+    </body>
+</html>

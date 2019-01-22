@@ -1,0 +1,34 @@
+<html>
+    <head>
+            <link rel="stylesheet" href="/style.css">
+    </head>
+
+    <body>
+         <div class="full_width header max-width">
+            <a href="/home"><img class="left smallMargin" src="/twitterBird.jpg"></a> 
+            <form action="/logout" method="POST">
+                <button class="right logout smallMargin">Logout</button>
+            </form>
+        </div>
+        <div>
+            <div class="post max-width">
+                <% 
+                var none = "inline-Block"
+                if (yourID != array[0].user_id){
+                    none = "none"
+                }
+                %>
+                <a href="/users/<%= array[0].user_id %>"><p class="postName"> <%= array[0].username %></p></a>
+                <p class="postContent inline-block"> <%= array[0].content %></p>
+                <form class="inline-block right" action="/delete/<%=array[0].id%>" method="POST">
+                    <button class="delete right <%= none %>">Delete</button>
+                </form>
+                <p class="postTime"> <%= date %></p>
+                <hr>
+            </div>
+        </div>
+    </body>
+
+    <footer>
+    </footer>
+</html>
