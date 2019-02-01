@@ -4,7 +4,7 @@ const morgan = require('morgan')
 const mysql = require('mysql')
 const bodyParser = require("body-parser")
 const session = require('express-session')
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcrypt')
 
 
 app.use(session({secret: 'your secret', saveUninitialized: true, resave: false}));
@@ -26,10 +26,10 @@ app.listen(3003, () => {
 
 function getConnection() {
   return mysql.createConnection({
-    host: 'localhost',
+    host: 'db',
     user: 'root',
-    password: 'newpass',
-    database: 'lbta_mysql',
+    password: 'example',
+    database: 'tweeter',
     multipleStatements: true
   })
 }
@@ -442,7 +442,7 @@ app.post('/search', (req, res) => {
 
   connection.query(queryString, [searchWord, searchWord], (err, rows, fields) => {
     if(err) {
-
+      return
     }
 
     var users = rows.map((row) => {
